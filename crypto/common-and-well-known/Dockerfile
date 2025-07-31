@@ -6,7 +6,7 @@ RUN apt-get update && \
 RUN pip3 install pycryptodome
 
 WORKDIR /home/nobody
-COPY src .
+COPY /crypto/broken-chall/src .
 
 USER nobody
 EXPOSE 9999
